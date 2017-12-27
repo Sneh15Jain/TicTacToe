@@ -10,6 +10,15 @@ public class TicTacToeTest {
 
     @Test
     public void simpleNoWinnerBoard() throws Exception {
+        assertEquals(Evaluation.Xwins, TicTacToe.evaluateBoard("Oo.XXX..."));
         assertEquals(Evaluation.NoWinner, TicTacToe.evaluateBoard("O...X.X.."));
+    }
+
+    @Test
+    public void count() {
+    }
+
+    @Test
+    public void evaluateBoard() {
     }
 }
